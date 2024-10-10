@@ -1,0 +1,76 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    background-color: #695CFE;
+}
+
+.icon{
+    font-size: 80px;
+    cursor: pointer;
+    margin-left: 55px;
+}
+.uil-qrcode-scan{
+    color: aliceblue;
+}
+.uil-file-import{
+    color: #1c15e5;
+}
+.uil-file-export{
+    color: #126433;
+}
+.uil-folder-upload{
+    color: #9c1d1d;
+}
+.uil-question{
+    color: #e9da13;
+}
+.contagem-iniciar{
+    margin-left: 5px;
+    margin-top: 20px;
+}
+.icon:hover{
+    opacity: 0.5;
+}
+p:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.importar-contagem{
+    margin-left: 35px;
+    margin-top: 20px;
+}
+.exportar-inventario{
+    margin-top: 250px;
+    margin-left: -450px;
+}
+.excluir-contagem{
+    margin-top: 250px;
+    margin-left: 50px;
+}
+.excluir-contagem p{
+    margin-left: 25px;
+}
+
+@media (max-width: 600px) {
+    .contagem-iniciar p{
+        margin-left: 45px;
+    }
+    .importar-contagem p{
+        margin-left: 45px;
+    }
+    .exportar-inventario p{
+        margin-left: 50px;
+    }
+    .excluir-contagem p{
+        margin-left: 50px;
+    }
+  }

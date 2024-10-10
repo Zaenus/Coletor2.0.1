@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="importar.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <script src="https://cdn.rawgit.com/agershun/alasql/aa4c70cd/dist/alasql.min.js"></script>
+    <script src="https://cdn.rawgit.com/agershun/alasql/aa4c70cd/dist/xlsx.core.min.js"></script>
+
+    <title>Modulo de Importação</title>
+</head>
+<body>
+    
+    <div class="tittle">
+        <i class="uil uil-file-import icon"></i>
+        <h1>Modulo de Importação do Excel</h1>
+    </div>
+
+    <div class="doc-select">
+        <input class="file-input" id="file" type="file">
+        <label for="file" class="plan-input">
+            <i class="uil uil-file-search-alt"></i> &nbsp;
+            Escolha um Arquivo
+        </label>
+    </div>
+
+    <div class="clear-inventory">
+        <label>
+            <input type="radio" name="category" id="category1" value="stand">
+            <span class="bubble business"></span>
+            <div>Não Apagar contagem Existente</div>
+        </label>
+
+        <label>
+            <input type="radio" name="category" id="category2" value="erase">
+            <span class="bubble personal"></span>
+            <div>Apagar Contagem Existente</div>
+        </label>
+    </div>
+
+    <div class="bottom-section">
+        <div class="plan-analise" onclick="processExcelFile()">
+            <i class="uil uil-file-search-alt icon"></i>
+            <span class="text">Analisar Planilha</span>
+        </div>
+
+        <div class="plan-cancel">
+            <i class="uil uil-times icon"></i>
+            <span class="text">Cancelar</span>
+        </div>
+    </div>
+
+    <script src="import.js"></script>
+</body>
+</html>

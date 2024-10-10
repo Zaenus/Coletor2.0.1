@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>Exportar Contagem</title>
+
+    <link rel="stylesheet" href="exportar.css">
+</head>
+<body>
+
+    <h1>Exportar Contagem</h1>
+
+    <label for="dateTimeInput" class="timeImput">Data Inventário:</label>
+    <input type="date" id="dateTimeInput" name="dateTimeInput">
+
+    <label for="timeInput" class="tempoInput">Hora Inventário:</label>
+    <input type="time" id="timeInput" name="timeInput">
+
+    <button class="exportBtn" id="exportBtn" onclick="exportDataToTextFile()">Exportar Arquivo</button>
+    
+    <div class="table-container" id="table-container">
+        <!-- The table will be appended here -->
+    </div>
+
+    <script src="exportar.js"></script>
+</body>
+</html>

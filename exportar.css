@@ -1,0 +1,81 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    background-color: #858588;
+}
+h1{
+    width: 500px;
+    margin-left: 40%;
+    white-space: nowrap;
+    margin-top: 10px;
+}
+.table-container{
+    display: flex;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 300px;
+}
+.data-table th, .data-table td {
+    text-align: center;
+    border: solid 2px black;
+}
+.negative-difference {
+    color: red;
+}
+.non-negative-difference {
+    color: blue;
+}
+#dateTimeInput{
+    width: 100px;
+    height: 35px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border: solid 3px;
+    border-radius: 4px;
+}
+.timeImput{
+    margin-top: 75px;
+    margin-bottom: 20px;
+    margin-left: -400px;
+}
+#timeInput{
+    width: 110px;
+    height: 35px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border: solid 3px;
+    border-radius: 4px;
+}
+.tempoInput{
+    margin-top: 75px;
+    margin-left: 20px;
+}
+.exportBtn{
+    height: 30px;
+    width: 160px;
+    margin-top: 130px;
+    margin-left: -500px;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 4px;
+}
+#exportBtn:hover{
+    background-color: #2980b9;
+}
+#exportBtn:active{
+    background-color: #1f618d;
+}
+.checkBoxCell{
+    width: 25px;
+}

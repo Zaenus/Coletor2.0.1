@@ -1,0 +1,196 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+  --primary:rgb(238, 13, 13);
+  --business: #3A82EE;
+  --personal: var(--primary);
+  --light: #EEE;
+  --grey: #888;
+  --dark: #313154;
+  --danger: #ff5b57;
+
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+  --business-glow: 0px 0px 4px rgba(58, 130, 238, 0.75);
+  --personal-glow: 0px 0px 4px rgba(243, 15, 15, 0.75);
+}
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(204, 202, 207);
+}
+.tittle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.tittle .icon{
+  font-size: 150px;
+  color: #695CFE;
+}
+.tittle h1{
+  font-weight: 600;
+  font-size: 50px;
+}
+.plan-name{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.plan-name p{
+  font-weight: 500;
+  font-size: 20px;
+}
+.plan-name .nome-planilha{
+  margin-left: 10px;
+}
+input[type=text]{
+  padding: 5px;
+  font-size: 15px;
+}
+.plan-name .icon{
+  margin-left: 5px;
+  font-size: 25px;
+  font-weight: 700;
+}
+.doc-select{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-top: 20px;
+}
+input[type="file"] {
+  display: none;
+}
+.plan-input{
+  display: flex;
+  margin-top: 60px;
+  width: 220px;
+  height: 40px;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  border: 1px solid #1f1f1f;
+  background-color: #695CFE;
+  cursor: pointer;
+}
+.plan-input .uil-file-search-alt{
+  font-size: 25px;
+}
+.plan-input:hover{
+  background-color: #7d2ae8;
+  color: #fff;
+}
+.clear-inventory{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.clear-inventory label{
+  display: flex;
+  margin-left: 50px;
+  margin-top: 80px;
+}
+input[type="radio"],
+input[type="checkbox"] {
+    display: none;
+}
+.bubble {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--business);
+  box-shadow: var(--business-glow);
+  margin-right: 10px;
+}
+.bubble.personal {
+  border-color: var(--personal);
+  box-shadow: var(--personal-glow);
+}
+
+.bubble::after {
+  content: "";
+  display: block;
+  opacity: 0;
+  width: 0px;
+  height: 0px;
+  background-color: var(--business);
+  box-shadow: var(--business-glow);
+  border-radius: 50%;
+  transition: 0.2s ease-in-out;
+}
+
+.bubble.bubble.personal::after {
+  background-color: var(--personal);
+  box-shadow: var(--personal-glow);
+}
+
+input:checked ~ .bubble::after {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+.bottom-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.plan-analise{
+  position: absolute;
+  display: flex;
+  width: 200px;
+  height: 40px;
+  background: #7d2ae8;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  margin-right: 300px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  }
+.plan-analise .icon{
+  font-size: 25px;
+}
+.plan-analise:hover{
+  background: #695CFE;
+  color: #fff;
+}
+.plan-cancel{
+  position: relative;
+  display: flex;
+  width: 200px;
+  height: 40px;
+  background: #7d2ae8;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  margin-left: 300px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.plan-cancel .icon{
+  font-size: 30px;
+}
+.plan-cancel:hover{
+  background: #695CFE;
+  color: #fff;
+}

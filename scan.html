@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="scan.css">
+    <title>ScanCode</title>
+</head>
+<body>
+
+    <button class="contagem-iniciar">Iniciar contagem</button>
+    <button class="stop-scanning">Parar contagem</button>
+    
+    <div class="scanner-container" id="scanner-container"></div>
+
+    <div class="code-search">
+        <input type="text" id="productCode">
+        <i class="uil uil-search-alt icon"></i>
+    </div>
+
+    <div class="status"></div>
+
+    <script type="module" src="mobileBarcode.js"></script>
+    <script src="https://unpkg.com/@zxing/library@latest"></script>
+
+</body>
+</html>

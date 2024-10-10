@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>Contagem Fisica</title>
+
+    <link rel="stylesheet" href="contagem.css">
+</head>
+<body>
+        
+    <h1>Contagem Fisica</h1>
+
+    <div class="mobile">
+        <i class="uil uil-qrcode-scan bar-scan" onclick="openScanPage()"></i>
+    </div>
+
+    <div class="code-search">
+        <input type="text" id="productCode" onkeydown="handleEnterKey(event)">
+        <i class="uil uil-search-alt icon" onclick="openSearchPage()"></i>
+        <i class="uil uil-file-search-alt icon searchIcon"></i>
+    </div>
+
+    <div class="product-description">
+        <div class="display-description" id="productDescription"></div>
+        <span class="productQuantity" id="productQuantity">Sistema: 0,00</span>
+        <span class="productConf" id="productConf">Conferido: 0,00</span>
+        <span class="productDif" id="productDif">Diferença: 0,00</span>
+    </div>
+
+    <div class="quantidade-inventario">
+        <span class="qtd">Qtd:</span>
+        <input type="text" id="inventarioQtd" onkeydown="quantEnterKey(event)">
+    </div>
+
+    <div class="regiter-btn">
+        <button id="register" onclick="registerInventory()">F10 - Registrar</button>
+    </div>
+
+    <div class="inventory-body" id="inventoryBody">
+        <div class="inventory-header-qtde">QTDE</div>
+        <div class="inventory-header-barras">Cod. Barras</div>
+        <div class="inventory-header-desc">Descrição</div>
+        <div class="inventory-header-conf">Conferência</div>
+        <div class="inventory-header-remov">Remover</div>
+    </div>
+    
+
+    <div class="inventoryContainer">
+    <ul class="inventory-qtde-body"></ul>
+
+    <ul class="inventory-barras-body"></ul>
+
+    <ul class="inventory-desc-body"></ul>
+
+    <ul class="inventory-conf-body"></ul>
+
+    <ul class="inventory-remov-body"></ul>
+    </div>
+
+    <div id="errorDisplay"></div>
+
+    <script src="inventory.js"></script>
+</body>
+</html>

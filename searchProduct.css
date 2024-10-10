@@ -1,0 +1,100 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background-color: #858588;
+}
+.title{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 500px;
+}
+.searchDisplay{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 300px;
+}
+.tableDisplay{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 300px;
+}
+#productList {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Style for table header */
+#productList th {
+    background-color: #f2f2f2;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Style for table rows */
+#productList td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+}
+
+/* Style for alternating row background color */
+#productList tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Style for hover effect on rows */
+#productList tr:hover {
+    background-color: #e0e0e0;
+}
+.searchDisplay label {
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 10px; /* Adjust as needed */
+}
+.searchDisplay input {
+    width: 500px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+}
+#searchButton{
+    background-color: blueviolet;
+    width: 200px;
+    height: 40px;
+    margin-left: 5px;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+#searchButton:hover{
+    background-color: #2980b9;
+}
+#searchButton:active{
+    background-color: #1f618d;
+}
+.cancelBtn{
+    background-color: #1f618d;
+    width: 200px;
+    height: 40px;
+    margin-left: 5px;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+.cancelBtn:hover{
+    background-color: blueviolet;
+}
+.cancelBtn:active{
+    background-color: #1f618d;
+}

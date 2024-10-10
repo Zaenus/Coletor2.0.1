@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configure Server IP</title>
+</head>
+<body>
+    <h1>Set Server IP Address</h1>
+    <form id="ipForm">
+        <label for="ipAddress">Enter IP Address:</label>
+        <input type="text" id="ipAddress" name="ipAddress" required>
+        <button type="submit">Start Server</button>
+    </form>
+
+    <script>
+        document.getElementById('ipForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const ip = document.getElementById('ipAddress').value;
+
+    // Send IP to the server (make sure the port matches your server)
+    fetch('http://localhost:3000/start-server', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ ip })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            alert('Server started on IP: ' + ip);
+        } else {
+            alert('Failed to start server: ' + data.message);
+        }
+    })
+    .catch(error => console.error('Error:', error));
+});
+
+    </script>
+</body>
+</html>
